@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+/* font-family: 'Outfit', sans-serif;
+font-family: 'Young Serif', serif; */
+
+:root{
+    --primary-nutmeg:hsl(14, 45%, 36%);
+    --primary-dark-rasberry:hsl(332, 51%, 32%);
+    --white:hsl(0, 0%, 100%);
+    --rose-white:hsl(330, 100%, 98%);
+    --eggshell:hsl(30, 54%, 90%);
+    --light-grey:hsl(30, 18%, 87%);
+    --wenge-brown:hsl(30, 10%, 34%);
+    --dark-charcoal:hsl(24, 5%, 18%);
+    
+}
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+/* body */
+body{
+    display: grid;
+   
+    justify-content: center;
+    align-items: center;
+    
+    background-color:var(--eggshell);
+}
+
+body h1{
+    font-family:'Young Serif', serif;
+}
+body h2{
+    color: var(--primary-nutmeg);
+}
+body h3{
+    color: var(--primary-dark-rasberry);
+}
+body p{
+    font-family: 'Outfit', sans-serif;
+}
+.container{
+    background: var(--white);
+    margin: 6% 30%;
+    border: 2px solid transparent;
+    padding: 2em 2em;
+    border-radius: 20px;
+}
+
+/* image */
+.image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+/* preparation */
+.preparation h1, h3, ul{
+    margin: 10px auto;
+}
+.block{
+    background-color:var(--eggshell);
+    border-radius: 5px;
+    padding: 10px 30px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.block li{
+    padding: 4px;
+}
+.block h3, li{
+    font-family: 'Outfit', sans-serif;
+}
+/* meratakan li */
+li{
+    margin-left: 20px;
+}
+
+/* ingredients */
+.ingre li{
+    padding: 4px;
+}
+
+/* instruction */
+.inst{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.inst h2{
+    margin-bottom: 0.5em;
+}
+.inst li{
+    margin-bottom: 0.4em;
+}
+
+/* nutrition */
+.nutri{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.nutri h2, p{
+    margin-bottom: 0.5em;
+}
+.nutri table{
+    width: 97%;
+    margin-left: 1em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    
+}
+.nutri td{
+    padding-bottom:0.9em;
+    border-bottom: 1px solid var(--light-grey);
+    text-align: start;
+    padding-left: 1em;
+}
+
+/* footer */
+.attribution { 
+    font-size: 11px; text-align: center; 
+    padding-top: 2em;
+}
+    .attribution a { color: hsl(228, 45%, 44%); 
+    text-decoration: none;
+    color: var(--dark-charcoal);
+}
+
+@media screen and (min-width:768px) {
+    body{
+        position:block;
+    }
+}
+
